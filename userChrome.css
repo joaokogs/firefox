@@ -1,4 +1,11 @@
 
+:root {
+  &[uidensity="touch"] {
+    --tab-min-height: 30px !important;
+  }
+}
+
+
 /* Menu button */
 #PanelUI-button {
   display: none !important; /* hide the menu button */
@@ -42,7 +49,6 @@
 #picture-in-picture-button,
 #tracking-protection-icon-container,
 #reader-mode-button,
-#translations-button,
 #taskbar-tabs-button
 {
   display: none !important
