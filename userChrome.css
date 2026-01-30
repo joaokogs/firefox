@@ -4,17 +4,66 @@
     --tab-min-height: 30px !important;
   }
 }
-
-
 /* Menu button */
 #PanelUI-button {
   display: none !important; /* hide the menu button */
 }
 
-/* Window control buttons (min, resize and close) */
-.titlebar-buttonbox-container {
+/* Window control buttons - macOS style with vertical center alignment */
+.titlebar-button {
+  align-self: center !important;
+  appearance: none !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  min-width: 12px !important;
+  min-height: 12px !important;
+  padding: 0 !important;
+  margin: 0 8px 0 0 !important;
+  background-image: none !important;
+}
+
+/* Close button - red */
+.titlebar-close {
+  background-color: #ff5f57 !important;
+}
+
+.titlebar-close:hover {
+  background-color: #ff3b30 !important;
+}
+
+/* Minimize button - yellow */
+.titlebar-min {
+  background-color: #ffbd2e !important;
+}
+
+.titlebar-min:hover {
+  background-color: #ff9500 !important;
+}
+
+/* Maximize/Restore button - green */
+.titlebar-max,
+.titlebar-restore {
+  background-color: #28c940 !important;
+}
+
+.titlebar-max:hover,
+.titlebar-restore:hover {
+  background-color: #00c32b !important;
+}
+
+/* Hide button icons */
+.titlebar-button > .toolbarbutton-icon {
   display: none !important;
-  margin-right: 12px !important;
+}
+
+.titlebar-button::before {
+  display: none !important;
+}
+
+.titlebar-button > image {
+  display: none !important;
 }
 
 /* Page back and foward buttons */
