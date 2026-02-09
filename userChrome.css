@@ -36,6 +36,7 @@
 /* Minimize button - yellow */
 .titlebar-min {
   background-color: #ffbd2e !important;
+  margin-left: 12px !important;
 }
 
 .titlebar-min:hover {
